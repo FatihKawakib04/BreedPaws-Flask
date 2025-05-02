@@ -1,0 +1,21 @@
+# Python virtual environments
+venv/
+
+# .pyc files
+*.pyc
+
+# IDEs or editors files
+.vscode/
+.idea/
+
+# Jupyter Notebooks checkpoint files
+.ipynb_checkpoints/
+
+# Model h5 uninclude
+/model/*.h5
+
+# Log files
+*.log
+
+# Output files
+*.out

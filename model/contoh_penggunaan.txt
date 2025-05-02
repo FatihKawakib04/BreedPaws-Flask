@@ -1,0 +1,88 @@
+
+CARA MENGGUNAKAN MODEL DI WEBSITE:
+
+1. OPSI 1: MENGGUNAKAN TENSORFLOW.JS (CLIENT-SIDE)
+   - Tambahkan script TensorFlow.js di HTML Anda:
+     <script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@latest"></script>
+
+   - Contoh kode JavaScript:
+     ```javascript
+     // Memuat model
+     async function loadModel() {
+       const model = await tf.loadLayersModel('model_for_web/tfjs_model/model.json');
+       return model;
+     }
+
+     // Memproses gambar
+     function preprocessImage(image) {
+       // Ubah gambar menjadi tensor dengan ukuran yang sesuai
+       let tensor = tf.browser.fromPixels(image)
+         .resizeNearestNeighbor([299, 299]) // Sesuaikan dengan ukuran input model
+         .toFloat()
+         .div(tf.scalar(255.0))
+         .expandDims();
+       return tensor;
+     }
+
+     // Memprediksi ras anjing
+     async function predictDogBreed(image) {
+       const model = await loadModel();
+       const tensor = preprocessImage(image);
+
+       // Lakukan prediksi
+       const predictions = await model.predict(tensor).data();
+
+       // Dapatkan indeks dengan nilai tertinggi
+       const maxIndex = predictions.indexOf(Math.max(...predictions));
+
+       // Ambil label dari file class_labels.json
+       // Anda perlu memuat file ini terlebih dahulu
+       return classLabels[maxIndex];
+     }
+     ```
+
+2. OPSI 2: MENGGUNAKAN BACKEND (SERVER-SIDE)
+   - Buat API dengan Flask/Django/Node.js
+   - Contoh kode Python dengan Flask:
+     ```python
+     from flask import Flask, request, jsonify
+     import tensorflow as tf
+     import numpy as np
+     from PIL import Image
+     import json
+
+     app = Flask(__name__)
+
+     # Muat model
+     model = tf.keras.models.load_model('model_for_web/dog_breed_model')
+
+     # Muat label kelas
+     with open('model_for_web/class_labels.json', 'r') as f:
+         class_labels = json.load(f)
+
+     @app.route('/predict', methods=['POST'])
+     def predict():
+         # Terima gambar dari request
+         file = request.files['image']
+         img = Image.open(file.stream)
+
+         # Praproses gambar
+         img = img.resize((299, 299))  # Sesuaikan dengan ukuran input model
+         img_array = np.array(img) / 255.0
+         img_array = np.expand_dims(img_array, axis=0)
+
+         # Prediksi
+         predictions = model.predict(img_array)
+         predicted_class = np.argmax(predictions, axis=1)[0]
+
+         # Kembalikan hasil
+         result = {
+             'breed': class_labels[str(predicted_class)],
+             'confidence': float(predictions[0][predicted_class])
+         }
+
+         return jsonify(result)
+
+     if __name__ == '__main__':
+         app.run(debug=True)
+     ```
