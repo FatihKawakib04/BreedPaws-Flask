@@ -294,6 +294,44 @@
             </div>
             <!--/container -->
          </div>
+         
+         <!-- Dog Breed Prediction Section -->
+         <div class="container block-padding">
+            <div class="section-heading text-center">
+               <h3>Prediksi Ras Anjing</h3>
+               <p class="subtitle">Unggah gambar anjing Anda dan kami akan memprediksi rasnya</p>
+            </div>
+            <div class="row">
+               <div class="col-md-6">
+                  <div class="card mb-4">
+                     <div class="card-body">
+                        <h5 class="card-title">Unggah Gambar Anjing</h5>
+                        <form id="upload-form" enctype="multipart/form-data">
+                           <div class="form-group mb-3">
+                              <label for="dog-image">Pilih gambar anjing:</label>
+                              <input type="file" class="form-control" id="dog-image" name="image" accept="image/*" required>
+                           </div>
+                           <button type="submit" class="btn btn-primary">Prediksi Ras</button>
+                        </form>
+                     </div>
+                  </div>
+               </div>
+               <div class="col-md-6">
+                  <div class="card">
+                     <div class="card-body">
+                        <h5 class="card-title">Hasil Prediksi</h5>
+                        <div id="prediction-result">
+                           <p class="text-center text-muted">Hasil prediksi akan ditampilkan di sini</p>
+                        </div>
+                        <div id="prediction-image" class="text-center mt-3" style="display: none;">
+                           <img src="" alt="Gambar Anjing" class="img-fluid rounded" style="max-height: 300px;">
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </div>
+         <!-- End Dog Breed Prediction Section -->
          <!--/bg-light-custom -->
       </div>
       <!-- /page -->
@@ -349,6 +387,8 @@
       <!-- Custom Js -->
       <script src="/static/js/custom.js"></script>
       <script src="/static/js/plugins.js"></script>
+      <!-- Dog Breed Prediction -->
+      <script src="/static/js/dog-breed-prediction.js"></script>
       <!-- Prefix free -->
       <script src="/static/js/prefixfree.min.js"></script>
    </body>
