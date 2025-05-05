@@ -40,9 +40,9 @@ Buka browser dan kunjungi: http://localhost:5000
 
 Jika Anda mengalami masalah saat menjalankan aplikasi, silakan lihat `panduan_instalasi_offline.md` untuk solusi dan tips tambahan.
 
-## Mode Minimal
+## Prediksi Ras Anjing
 
-Aplikasi ini berjalan dalam mode minimal yang tidak memerlukan TensorFlow atau model machine learning. Prediksi ras anjing menggunakan nilai acak untuk tujuan demonstrasi.
+Aplikasi ini menggunakan model machine learning TensorFlow untuk memprediksi ras anjing dari gambar yang diunggah.
 
 ## Pengembangan Lebih Lanjut
 

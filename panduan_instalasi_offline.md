@@ -57,9 +57,9 @@ Aplikasi ini menggunakan:
 - Jinja2 3.0.1
 - Pillow 8.3.1
 
-## Catatan Mode Minimal
+## Catatan Penting
 
-Aplikasi ini berjalan dalam mode minimal tanpa TensorFlow. Prediksi breed anjing menggunakan nilai acak untuk demo. Tidak diperlukan model machine learning atau dependensi berat lainnya.
+Aplikasi ini memerlukan TensorFlow dan model machine learning untuk berfungsi dengan baik. Pastikan file model dog_breed_model.h5 tersedia di folder model/.
 
 ## Troubleshooting
 

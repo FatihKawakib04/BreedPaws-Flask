@@ -30,10 +30,6 @@ document.addEventListener('DOMContentLoaded', function() {
                             <p><strong>Tingkat Keyakinan:</strong> ${(data.confidence * 100).toFixed(2)}%</p>
                     `;
                     
-                    // Tambahkan informasi mode jika tersedia
-                    if (data.mode) {
-                        predictionHTML += `<p><em>Mode: ${data.mode}</em></p>`;
-                    }
                     
                     predictionHTML += `</div>`;
                     predictionResult.innerHTML = predictionHTML;
