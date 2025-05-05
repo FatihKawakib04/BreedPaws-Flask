@@ -87,6 +87,10 @@ def predict():
 def team():
     return render_template('team.html')
 
+@app.route("/elements.html")
+def elements():
+    return render_template('elements.html')
+
 @app.route("/404.html")
 def error_page():
     return render_template('404.html')
