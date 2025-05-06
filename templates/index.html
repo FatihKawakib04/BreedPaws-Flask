@@ -15,8 +15,8 @@
       <![endif]-->
       <!-- Font files -->
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700%7CQuicksand:400,500,700&display=swap" rel="stylesheet">
-      <link href="fonts/flaticon/flaticon.css" rel="stylesheet" type="text/css">
-      <link href="fonts/fontawesome/fontawesome-all.min.css" rel="stylesheet" type="text/css">
+      <link href="/static/fonts/flaticon/flaticon.css" rel="stylesheet" type="text/css">
+      <link href="/static/fonts/fontawesome/fontawesome-all.min.css" rel="stylesheet" type="text/css">
       <!-- Fav icons -->
       <link rel="apple-touch-icon" sizes="57x57" href="apple-icon-57x57.png">
       <link rel="apple-touch-icon" sizes="72x72" href="apple-icon-72x72.png">
@@ -56,7 +56,7 @@
          <div class="navbar container-fluid">
             <div class="container">
                <!-- logo -->
-               <a class="navbar-brand" href="index.html">
+               <a class="navbar-brand" href="/">
                <i class="flaticon-dog-20"></i><span>BreedPaws!</span>
                </a>
                <!-- Navbartoggler -->
@@ -119,8 +119,8 @@
          <!-- placeholder image in case the browser doesn't play the video -->
          <video id="bgvid" playsinline autoplay muted loop>
             <!-- video -->
-            <source src="videos/video.webm" type="video/webm">
-            <source src="videos/video.mp4" type="video/mp4">
+            <source src="/static/videos/video.webm" type="video/webm">
+            <source src="/static/videos/video.mp4" type="video/mp4">
          </video>
          <div class="video-text">
             <h1>Welcome to</h1>
@@ -156,7 +156,7 @@
                   </div>
                   <!-- /col-xl-->
                   <div class="col-xl-6">
-                     <img src="img/services2.jpg" alt=""   data-aos="fade-down"  data-aos-duration="1500"  class="img-fluid border-irregular1 border-double">
+                     <img src="/static/img/services2.jpg" alt=""   data-aos="fade-down"  data-aos-duration="1500"  class="img-fluid border-irregular1 border-double">
                   </div>
                </div>
                <!-- /row -->
@@ -166,28 +166,6 @@
          <!-- /container -->
       </section>
       <!-- / Section Ends -->
-      <!-- Section Blurb -->
-      <section id="blurb" class="bg-primary text-light">
-         <div class="container">
-            <div class="row">
-               <div class="col-xl-8 position-relative">
-                  <!-- image  -->
-                  <img src="img/blurbimg.png" class="img-fluid blurb-img" alt="">
-               </div>
-               <div class="col-xl-4 my-auto" data-aos="fade-down" >
-                  <h2 class="res-margin">Join our club</h2>
-                  <p class="featured-text">Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. 
-                     In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum.
-                  </p>
-                  <!-- button -->
-                  <a href="contact.html" class="btn btn-primary">contact us</a>
-               </div>
-               <!-- /col-lg -->
-            </div>
-            <!-- /row -->
-         </div>
-         <!-- /container -->
-      </section>
       <!-- SVG effect -->
       <svg id="bigTriangleColor" class="d-none d-sm-block" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100" viewBox="0 0 100 102" preserveAspectRatio="none">
          <path d="M0 0 L50 100 L100 0 Z" />
@@ -217,576 +195,14 @@
                </div>
                <!-- image -->
                <div class="col-lg-6">
-                  <img src="img/about2.jpg" alt="" class="img-fluid border-irregular1"   data-aos="zoom-in">
+                  <img src="/static/img/about2.jpg" alt="" class="img-fluid border-irregular1"   data-aos="zoom-in">
                </div>
             </div>
             <!-- /row -->
          </div>
          <!-- /container -->
-         <div class="bg-light-custom block-padding">
-            <div class="container">
-               <div id="counter" class="row">
-                  <!-- Counter -->
-                  <div class="col-xl-3 col-md-6">
-                     <div class="counter">
-                        <i class="counter-icon fa fa-users"></i>
-                        <!-- insert your final value on data-count= -->
-                        <div class="counter-value" data-count="1500">0</div>
-                        <h3 class="title">Happy Clients</h3>
-                     </div>
-                     <!-- /counter -->
-                  </div>
-                  <!-- /col-lg -->
-                  <!-- Counter -->
-                  <div class="col-xl-3 col-md-6">
-                     <div class="counter">
-                        <i class="counter-icon flaticon-dog-in-front-of-a-man"></i>
-                        <!-- insert your final value on data-count= -->
-                        <div class="counter-value" data-count="14">0</div>
-                        <h3 class="title">Professionals</h3>
-                     </div>
-                     <!-- /counter -->
-                  </div>
-                  <!-- /col-lg -->
-                  <!-- Counter -->
-                  <div class="col-xl-3 col-md-6">
-                     <div class="counter">
-                        <i class="counter-icon flaticon-dog-2"></i>
-                        <!-- insert your final value on data-count= -->
-                        <div class="counter-value" data-count="900">0</div>
-                        <h3 class="title">Adopted Pets</h3>
-                     </div>
-                     <!-- /counter -->
-                  </div>
-                  <!-- /col-lg -->
-                  <!-- Counter -->
-                  <div class="col-xl-3 col-md-6">
-                     <div class="counter">
-                        <i class="counter-icon flaticon-prize-badge-with-paw-print"></i>
-                        <!-- insert your final value on data-count= -->
-                        <div class="counter-value" data-count="12">0</div>
-                        <h3 class="title">Prizes</h3>
-                     </div>
-                     <!-- /counter -->
-                  </div>
-                  <!-- /col-lg -->
-               </div>
-               <!-- /row -->
-            </div>
-            <!-- /container -->
-         </div>
-         <!-- /block-padding -->
-         <div class="container bottom-block-padding">
-            <h3 class="text-center">What our clients say</h3>
-            <div class="col-md-12 mt-5">
-               <div id="owl-testimonial" class="owl-carousel owl-theme">
-                  <!-- testimonial -->
-                  <div class="testimonial">
-                     <div class="content">
-                        <p class="description">
-                           Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.                        
-                        </p>
-                     </div>
-                     <!-- /content -->
-                     <div class="testimonial-pic">
-                        <img src="img/team/team1.jpg" class="img-fluid" alt="">
-                     </div>
-                     <!-- /testimonial-pic -->
-                     <div class="testimonial-review">
-                        <h5 class="testimonial-title">Lucianna Smith</h5>
-                        <span>Teacher</span>
-                     </div>
-                     <!-- /testimonial-review -->
-                  </div>
-                  <!-- /testimonial -->
-                  <!-- testimonial -->
-                  <div class="testimonial">
-                     <div class="content">
-                        <p class="description">
-                           Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.                        
-                        </p>
-                     </div>
-                     <!-- /content -->
-                     <div class="testimonial-pic">
-                        <img src="img/team/team2.jpg" class="img-fluid" alt="">
-                     </div>
-                     <!-- /testimonial-pic -->
-                     <div class="testimonial-review">
-                        <h5 class="testimonial-title">John Sadana</h5>
-                        <span>Doctor</span>
-                     </div>
-                     <!-- /testimonial-review -->
-                  </div>
-                  <!-- /testimonial -->
-                  <!-- testimonial -->
-                  <div class="testimonial">
-                     <div class="content">
-                        <p class="description">
-                           Aliquam erat volutpat In id fermentum augue, ut pellentesque leo. Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.                        
-                        </p>
-                     </div>
-                     <!-- /content -->
-                     <div class="testimonial-pic">
-                        <img src="img/team/team3.jpg" class="img-fluid" alt="">
-                     </div>
-                     <!-- /testimonial-pic -->
-                     <div class="testimonial-review">
-                        <h5 class="testimonial-title">Jane Janeth</h5>
-                        <span>Librarian</span>
-                     </div>
-                     <!-- /testimonial-review -->
-                  </div>
-                  <!-- /testimonial -->
-               </div>
-               <!-- /owl-testimonial -->
-            </div>
-            <!-- /col-md-12 -->
-         </div>
-         <!-- /container -->
       </section>
       <!-- / Section Ends -->
-      <!-- Section: Gallery -->
-      <section id="gallery" class="dog-bg1 bg-light pb-0">
-         <div class="container">
-            <div class="section-heading text-center">
-               <h2>Our Gallery</h2>
-            </div>
-            <!-- /Section-heading -->
-         </div>
-         <!-- /container -->
-         <!-- centered Gallery navigation -->
-         <ul class="nav nav-pills cat center-nav">
-            <li class="nav-item">
-               <a class="nav-link active" href="#" data-bs-toggle="tab" data-filter="*">All</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#" data-bs-toggle="tab" data-filter=".dogscats">Dogs and Cats</a>
-            </li>
-            <li class="nav-item">
-               <a class="nav-link" href="#" data-bs-toggle="tab" data-filter=".other">Other Pets</a>
-            </li>
-         </ul>
-         <!-- /ul -->
-         <!-- Gallery -->
-         <div id="gallery-isotope" class="mt-5">
-            <!-- Image 1 -->
-            <div class="dogscats col-lg-3 col-sm-6 col-md-6">
-               <div class="isotope-item">
-                  <div class="gallery-thumb">
-                     <img class="img-fluid" src="img/gallery/gallery1.jpg" alt="">
-                     <a href="img/gallery/gallery1.jpg"  title="You can add caption to pictures.">
-                     <span class="overlay-mask"></span>
-                     </a>							  							  
-                  </div>
-               </div>
-            </div>
-            <!-- Image 2 -->
-            <div class="other col-lg-3 col-sm-6 col-md-6">
-               <div class="isotope-item">
-                  <div class="gallery-thumb">
-                     <img class="img-fluid" src="img/gallery/gallery2.jpg" alt="">
-                     <a href="img/gallery/gallery2.jpg"  title="You can add caption to pictures.">
-                     <span class="overlay-mask"></span>
-                     </a>							  							  
-                  </div>
-               </div>
-            </div>
-            <!-- Image 3 -->
-            <div class="other col-lg-3 col-sm-6 col-md-6">
-               <div class="isotope-item">
-                  <div class="gallery-thumb">
-                     <img class="img-fluid" src="img/gallery/gallery3.jpg" alt="">
-                     <a href="img/gallery/gallery3.jpg"  title="You can add caption to pictures.">
-                     <span class="overlay-mask"></span>
-                     </a>							  							  
-                  </div>
-               </div>
-            </div>
-            <!-- Image 4 -->
-            <div class="dogscats col-lg-3 col-sm-6 col-md-6">
-               <div class="isotope-item">
-                  <div class="gallery-thumb">
-                     <img class="img-fluid" src="img/gallery/gallery4.jpg" alt="">
-                     <a href="img/gallery/gallery4.jpg"  title="You can add caption to pictures.">
-                     <span class="overlay-mask"></span>
-                     </a>							  							  
-                  </div>
-               </div>
-            </div>
-            <!-- Image 5 -->
-            <div class="dogscats col-lg-3 col-sm-6 col-md-6">
-               <div class="isotope-item">
-                  <div class="gallery-thumb">
-                     <img class="img-fluid" src="img/gallery/gallery5.jpg" alt="">
-                     <a href="img/gallery/gallery5.jpg"  title="You can add caption to pictures.">
-                     <span class="overlay-mask"></span>
-                     </a>							  							  
-                  </div>
-               </div>
-            </div>
-            <!-- Image 6 -->
-            <div class="dogscats col-lg-3 col-sm-6 col-md-6">
-               <div class="isotope-item">
-                  <div class="gallery-thumb">
-                     <img class="img-fluid" src="img/gallery/gallery6.jpg" alt="">
-                     <a href="img/gallery/gallery6.jpg"  title="You can add caption to pictures.">
-                     <span class="overlay-mask"></span>
-                     </a>							  							  
-                  </div>
-               </div>
-            </div>
-            <!-- Image 7 -->
-            <div class="dogscats col-lg-3 col-sm-6 col-md-6">
-               <div class="isotope-item">
-                  <div class="gallery-thumb">
-                     <img class="img-fluid" src="img/gallery/gallery7.jpg" alt="">
-                     <a href="img/gallery/gallery7.jpg"  title="You can add caption to pictures.">
-                     <span class="overlay-mask"></span>
-                     </a>							  							  
-                  </div>
-               </div>
-            </div>
-            <!-- Image 8 -->
-            <div class="other col-lg-3 col-sm-6 col-md-6">
-               <div class="isotope-item">
-                  <div class="gallery-thumb">
-                     <img class="img-fluid" src="img/gallery/gallery8.jpg" alt="">
-                     <a href="img/gallery/gallery8.jpg"  title="You can add caption to pictures.">
-                     <span class="overlay-mask"></span>
-                     </a>							  							  
-                  </div>
-               </div>
-            </div>
-            <!-- Image 9 -->
-            <div class="other col-lg-3 col-sm-6 col-md-6">
-               <div class="isotope-item">
-                  <div class="gallery-thumb">
-                     <img class="img-fluid" src="img/gallery/gallery9.jpg" alt="">
-                     <a href="img/gallery/gallery9.jpg"  title="You can add caption to pictures.">
-                     <span class="overlay-mask"></span>
-                     </a>							  							  
-                  </div>
-               </div>
-            </div>
-            <!-- Image 10 -->
-            <div class="dogscats col-lg-3 col-sm-6 col-md-6">
-               <div class="isotope-item">
-                  <div class="gallery-thumb">
-                     <img class="img-fluid" src="img/gallery/gallery10.jpg" alt="">
-                     <a href="img/gallery/gallery10.jpg"  title="You can add caption to pictures.">
-                     <span class="overlay-mask"></span>
-                     </a>							  							  
-                  </div>
-               </div>
-            </div>
-            <!-- Image 11 -->
-            <div class="other col-lg-3 col-sm-6 col-md-6">
-               <div class="isotope-item">
-                  <div class="gallery-thumb">
-                     <img class="img-fluid" src="img/gallery/gallery11.jpg" alt="">
-                     <a href="img/gallery/gallery11.jpg"  title="You can add caption to pictures.">
-                     <span class="overlay-mask"></span>
-                     </a>							  							  
-                  </div>
-               </div>
-            </div>
-            <!-- Image 12 -->
-            <div class="dogscats col-lg-3 col-sm-6 col-md-6">
-               <div class="isotope-item">
-                  <div class="gallery-thumb">
-                     <img class="img-fluid" src="img/gallery/gallery12.jpg" alt="">
-                     <a href="img/gallery/gallery12.jpg"  title="You can add caption to pictures.">
-                     <span class="overlay-mask"></span>
-                     </a>							  							  
-                  </div>
-               </div>
-            </div>
-         </div>
-         <!-- /gallery-isotope-->  
-      </section>
-      <!-- / Section Ends -->
-      <!-- Section team -->
-      <section id="team" class="cat-bg1">
-         <div class="container">
-            <div class="section-heading text-center">
-               <h2>Our Team</h2>
-            </div>
-            <!-- /Section-heading -->
-            <div class="container">
-               <div id="owl-team2" class="owl-carousel owl-theme">
-                  <!-- Team member -->
-                  <div class="col-lg-12 team-style2">
-                     <!-- image -->
-                     <img src="img/team/team1.jpg" alt="" class="img-fluid">
-                     <div class="team-caption">
-                        <!-- social icons -->
-                        <div class="icons">
-                           <a href="#"><i class="fa fa-envelope"></i></a>
-                           <a href="#"><i class="fab fa-facebook-f"></i></a>
-                           <a href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                     </div>
-                     <!-- name -->
-                     <div class="name">
-                        <h4> Mary Smith</h4>
-                        <h6>Trainer</h6>
-                     </div>
-                     <!-- /name -->
-                  </div>
-                  <!-- /team -->
-                  <!-- Team member -->
-                  <div class="col-lg-12 team-style2">
-                     <!-- image -->
-                     <img src="img/team/team2.jpg" alt="" class="img-fluid">
-                     <div class="team-caption">
-                        <!-- social icons -->
-                        <div class="icons">
-                           <a href="#"><i class="fa fa-envelope"></i></a>
-                           <a href="#"><i class="fab fa-facebook-f"></i></a>
-                           <a href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                     </div>
-                     <!-- name -->
-                     <div class="name">
-                        <h4>John Doe</h4>
-                        <h6>Pet Expert</h6>
-                     </div>
-                     <!-- /name -->
-                  </div>
-                  <!-- /team -->
-                  <!-- Team member -->
-                  <div class="col-lg-12 team-style2">
-                     <!-- image -->
-                     <img src="img/team/team3.jpg" alt="" class="img-fluid">
-                     <div class="team-caption">
-                        <!-- social icons -->
-                        <div class="icons">
-                           <a href="#"><i class="fa fa-envelope"></i></a>
-                           <a href="#"><i class="fab fa-facebook-f"></i></a>
-                           <a href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                     </div>
-                     <!-- name -->
-                     <div class="name">
-                        <h4>Alissa Silva</h4>
-                        <h6>Veterinarian</h6>
-                     </div>
-                     <!-- /name -->
-                  </div>
-                  <!-- /team -->
-                  <!-- Team member -->
-                  <div class="col-lg-12 team-style2">
-                     <!-- image -->
-                     <img src="img/team/team4.jpg" alt="" class="img-fluid">
-                     <div class="team-caption">
-                        <!-- social icons -->
-                        <div class="icons">
-                           <a href="#"><i class="fa fa-envelope"></i></a>
-                           <a href="#"><i class="fab fa-facebook-f"></i></a>
-                           <a href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                     </div>
-                     <!-- name -->
-                     <div class="name">
-                        <h4>Ana Doe</h4>
-                        <h6>Veterinarian</h6>
-                     </div>
-                     <!-- /name -->
-                  </div>
-                  <!-- /team -->
-                  <!-- Team member -->
-                  <div class="col-lg-12 team-style2">
-                     <!-- image -->
-                     <img src="img/team/team5.jpg" alt="" class="img-fluid">
-                     <div class="team-caption">
-                        <!-- social icons -->
-                        <div class="icons">
-                           <a href="#"><i class="fa fa-envelope"></i></a>
-                           <a href="#"><i class="fab fa-facebook-f"></i></a>
-                           <a href="#"><i class="fab fa-instagram"></i></a>
-                        </div>
-                     </div>
-                     <!-- name -->
-                     <div class="name">
-                        <h4>Lucas Smith</h4>
-                        <h6>Animal Caretaker</h6>
-                     </div>
-                     <!-- /name -->
-                  </div>
-                  <!-- /team -->
-               </div>
-               <!-- /owl-team2 -->
-            </div>
-            <!-- /container -->   
-         </div>
-         <!-- /container -->
-      </section>
-      <!-- / Section Ends -->
-      <!-- Section Call to action -->
-      <div id="call-to-action">
-         <div class="container block-padding">
-            <div class="col-lg-6 offset-lg-6 bg-primary text-light card text-center" >
-               <h4>Subscribe to our newsletter</h4>
-               <p>Ultricies a,interdum donec eget metus auguen u Fusce mollis imperdiet interdum donec eget metus auguen unc vel lorem.</p>
-               <!-- Form -->				
-               <div id="mc_embed_signup">
-                  <!-- your form address in the line bellow -->
-                  <form action="//yourlist.us12.list-manage.com/subscribe/post?u=04e646927a196552aaee78a7b&id=111" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-                     <div id="mc_embed_signup_scroll">
-                        <div class="mc-field-group">
-                           <div class="input-group">
-                              <input class="form-control input-lg required email" type="email" value="" name="EMAIL" placeholder="Your email here" id="mce-EMAIL">
-                              <span class="input-group-btn">
-                              <button class="btn btn-primary" type="submit" value="Subscribe" name="subscribe" id="mc-embedded-subscribe">Subscribe</button>
-                              </span>
-                           </div>
-                           <!-- Subscription results -->
-                           <div id="mce-responses" class="mailchimp">
-                              <div class="alert alert-danger response" id="mce-error-response"></div>
-                              <div class="alert alert-success response" id="mce-success-response"></div>
-                           </div>
-                        </div>
-                        <!-- /mc-fiel-group -->									
-                     </div>
-                     <!-- /mc_embed_signup_scroll -->
-                  </form>
-                  <!-- /form ends -->								
-               </div>
-               <!-- /mc_embed_signup -->
-            </div>
-            <!-- /col-md-12 -->
-         </div>
-         <!--/row -->
-      </div>
-      <!--/call-to-action --><!-- Section Adopt -->
-      <section id="adopt" class="paws-house-bg1 bg-light">
-         <div class="container ">
-            <div class="section-heading text-center">
-               <h2>Adopt a Pet</h2>
-            </div>
-            <!-- /Section-heading -->
-            <div class="col-lg-10 offset-lg-1 text-center">
-               <h3>Find a new furry Friend</h3>
-               <p>Maecenas at arcu risus. Donec commodo sodales ex, scelerisque laoreet nibh hendrerit id. In aliquet magna nec lobortis maximus. Etiam rhoncus leo a dolor placerat, nec elementum ipsum convall.</p>
-            </div>
-            <!-- First row: Adopt a pet -->
-            <div class="row mt-5">
-               <!-- Pet  -->
-               <div class="adopt-card col-md-6 col-xl-3 res-margin">
-                  <div class="card bg-light-custom">
-                     <div class="thumbnail text-center">
-                        <!-- Image -->
-                        <img src="img/adoption/adoption1.jpg" class="border-irregular1 img-fluid" alt="">
-                        <!-- Name -->
-                        <div class="caption-adoption">
-                           <h6 class="adoption-header">Fluffy</h6>
-                           <!-- List -->
-                           <ul class="list-unstyled">
-                              <li><strong>Gender:</strong> Female</li>
-                              <li><strong>Neutered: </strong> Yes</li>
-                              <li><strong>Age:</strong> 2 years</li>
-                           </ul>
-                           <!-- Buttons -->								  
-                           <div class="text-center">
-                              <a href="adoption-single.html" class="btn btn-primary">More Info</a>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- /thumbnail -->
-                  </div>
-                  <!-- /card -->
-               </div>
-               <!-- /adopt-card -->
-               <!-- /pet -->
-               <!-- Pet  -->
-               <div class="adopt-card col-md-6 col-xl-3 res-margin">
-                  <div class="card bg-light-custom">
-                     <div class="thumbnail text-center">
-                        <!-- Image -->
-                        <img src="img/adoption/adoption2.jpg" class="border-irregular1 img-fluid" alt="">
-                        <!-- Name -->
-                        <div class="caption-adoption">
-                           <h6 class="adoption-header">Charlie</h6>
-                           <!-- List -->
-                           <ul class="list-unstyled">
-                              <li><strong>Gender:</strong> Male</li>
-                              <li><strong>Neutered: </strong> Yes</li>
-                              <li><strong>Age:</strong> 2 years</li>
-                           </ul>
-                           <!-- Buttons -->								  
-                           <div class="text-center">
-                              <a href="adoption-single.html" class="btn btn-primary">More Info</a>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- /thumbnail -->
-                  </div>
-                  <!-- /card -->
-               </div>
-               <!-- /adopt-card -->
-               <!-- /pet -->
-               <!-- Pet  -->
-               <div class="adopt-card col-md-6 col-xl-3 res-margin">
-                  <div class="card bg-light-custom">
-                     <div class="thumbnail text-center">
-                        <!-- Image -->
-                        <img src="img/adoption/adoption3.jpg" class="border-irregular1 img-fluid" alt="">
-                        <!-- Name -->
-                        <div class="caption-adoption">
-                           <h6 class="adoption-header">Lucky</h6>
-                           <!-- List -->
-                           <ul class="list-unstyled">
-                              <li><strong>Gender:</strong> Male</li>
-                              <li><strong>Neutered: </strong> Yes</li>
-                              <li><strong>Age:</strong> 5 years</li>
-                           </ul>
-                           <!-- Buttons -->								  
-                           <div class="text-center">
-                              <a href="adoption-single.html" class="btn btn-primary">More Info</a>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- /thumbnail -->
-                  </div>
-                  <!-- /card -->
-               </div>
-               <!-- /adopt-card -->
-               <!-- /pet -->
-               <!-- Pet  -->
-               <div class="adopt-card col-md-6 col-xl-3 res-margin">
-                  <div class="card bg-light-custom">
-                     <div class="thumbnail text-center">
-                        <!-- Image -->
-                        <img src="img/adoption/adoption4.jpg" class="border-irregular1 img-fluid" alt="">
-                        <!-- Name -->
-                        <div class="caption-adoption">
-                           <h6 class="adoption-header">Magdalene</h6>
-                           <!-- List -->
-                           <ul class="list-unstyled">
-                              <li><strong>Gender:</strong> Female</li>
-                              <li><strong>Neutered: </strong> No</li>
-                              <li><strong>Age:</strong> 2 years</li>
-                           </ul>
-                           <!-- Buttons -->								  
-                           <div class="text-center">
-                              <a href="adoption-single.html" class="btn btn-primary">More Info</a>
-                           </div>
-                        </div>
-                     </div>
-                     <!-- /thumbnail -->
-                  </div>
-                  <!-- /card -->
-               </div>
-               <!-- /adopt-card -->
-               <!-- /pet -->
-            </div>
-            <!-- /row -->      
-            <div class="text-center mt-5">
-               <a href="adoption.html" class="btn btn-secondary btn-lg">See more pets</a>
-            </div>
-         </div>
-         <!-- /container -->
-      </section>
       <!-- Section Contact -->
       <section id="contact" class="dog-bg3">
          <div class="container">
@@ -799,40 +215,9 @@
          <div class="container">
             <div class="row">
                <!-- contact info -->
-               <div class="contact-info col-lg-5 card bg-light-custom">
-                  <h4>Send us a message!</h4>
-                  <!-- Form Starts -->
-                  <div id="contact_form">
-                     <div class="form-group">
-                        <div class="row">
-                           <div class="col-md-6">
-                              <label>Name<span class="required">*</span></label>
-                              <input type="text" name="name" class="form-control input-field" required=""> 
-                           </div>
-                           <div class="col-md-6">
-                              <label>Email Address <span class="required">*</span></label>
-                              <input type="email" name="email" class="form-control input-field" required=""> 
-                           </div>
-                        </div>
-                        <div class="row">
-                           <div class="col-md-12">
-                              <label>Subject</label>
-                              <input type="text" name="subject" class="form-control input-field"> 
-                           </div>
-                           <div class="col-md-12">
-                              <label>Message<span class="required">*</span></label>
-                              <textarea name="message" id="message" class="textarea-field form-control" rows="3"  required=""></textarea>
-                           </div>
-                        </div>
-                        <button type="submit" id="submit_btn" value="Submit" class="btn btn-primary">Send message</button>
-                     </div>
-                     <!-- Contact results -->
-                     <div id="contact_results"></div>
-                  </div>
-               </div>
-               <div class="col-lg-7">
+               <div class="col-lg-12 text-center">
                   <!-- map-->
-                  <div id="map-canvas" class="mt-3 border-irregular1"></div>
+                  <div id="map-canvas" class="mt-3 border-irregular1 mx-auto" style="max-width: 800px;"></div>
                </div>
                <!-- /col-lg-->
             </div>
@@ -869,7 +254,7 @@
                      <!-- contact-icon info-->
                      <div class="contact-icon-info">
                         <h5>Call us today</h5>
-                        <p class="h7">(123) 456-789</p>
+                        <p class="h7">+62 821-1481-8279 | +62 821-1481-8279 | +62 821-1481-8279 |</p>
                      </div>
                   </div>
                </div>
@@ -902,14 +287,14 @@
          <div class="container">
             <div class="row">
                <div class="col-lg-6">
-                  <a class="navbar-brand" href="index.html"><i class="flaticon-dog-20"></i><span>BreedPaws!</span></a>
+                  <a class="navbar-brand" href="/"><i class="flaticon-dog-20"></i><span>BreedPaws!</span></a>
                   <p class="mt-3">Cras enim wisi elit aenean, amet eros curabitur. Wisi ad eget ipsum<br>  metus sociisc ras enim wisi elit aenean.</p>
                </div>
                <!--/ col-lg -->
                <div class="col-lg-3">
                   <h6><i class="fas fa-envelope margin-icon"></i>Contact Us</h6>
                   <ul class="list-unstyled">
-                     <li>+62 821-1481-8279 | +62 821-1481-8279 | +62 821-1481-8279 | </li>
+                     <li>+62 821-1481-8279 | +62 821-1481-8279 | +62 821-1481-8279 |</li>
                      <li><a href="mailto:yoshfkk@gmail.com">yoshfkk@gmail.com</a></li>
                      <li>Jl. Kumbang No.14, RT.02/RW.06, Babakan, Kecamatan Bogor Tengah, Kota Bogor, Jawa Barat 16128 </li>
                   </ul>
@@ -930,7 +315,7 @@
             <!--/ row-->
             <div class="row">
                <div class="credits col-sm-12">
-                  <p>Designed by <a href="http://www.ingridkuhn.com">Fatih | Yordi | Najla</a></p>
+                  <p>Designed by <a href="/">Fatih | Yordi | Najla</a></p>
                </div>
             </div>
             <!--/ row -->
