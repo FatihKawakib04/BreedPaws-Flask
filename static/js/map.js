@@ -1,12 +1,12 @@
-  $(window).on('load', function(){  
+$(window).on('load', function(){  
 	
 	//Open street  Map
 	var mapcanvas = document.getElementById("map-canvas");
 	if(mapcanvas){
 		//Open street  Map
-		var coord = [40.738270, -74.008911]; // <--- coordinates here
+		var coord = [-6.589243607802582, 106.80609074476521]; // Koordinat Sekolah Vokasi IPB
 
-		var map = L.map('map-canvas', { scrollWheelZoom:false}).setView(coord, 19);
+		var map = L.map('map-canvas', { scrollWheelZoom:false}).setView(coord, 17);
 
 		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
 		maxZoom: 22,

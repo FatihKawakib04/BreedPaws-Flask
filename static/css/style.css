@@ -139,15 +139,24 @@ Last change:27 June 2023
 }
  .spinner .bounce1 {
      animation-delay: -0.32s;
+     background: none;
+     border: none;
+     outline: none;
+     width: 80px;
+     height: 80px;
 }
 /* Preloader icon */
  .spinner .bounce1:after {
-     content: "\f112";
+     content: "";
      position: absolute;
-     font-family: "flaticon";
-     font-size: 40px;
+     background-image: url(../img/paws-logo.png);
+     background-size: contain;
+     background-repeat: no-repeat;
+     background-position: center;
+     width: 80px;
+     height: 80px;
      margin-top: -40px;
-     margin-left: -10px;
+     margin-left: -40px;
 }
  @keyframes bouncedelay {
      0%, 80%, 100% {
