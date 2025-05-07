@@ -132,6 +132,10 @@ def elements():
 def error_page():
     return render_template('404.html')
 
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template('404.html'), 404
+
 if __name__ == "__main__":
     print("\n=== MENJALANKAN APLIKASI BREEDPAWS ===")
     print(f"Model ML berhasil dimuat: {model_path}")
