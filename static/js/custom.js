@@ -68,25 +68,24 @@ Version: 2.0
 			//Owl-carousels
 			
 			$("#owl-services2").owlCarousel({
-				nav: true,
-				navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
-				dots: true,
+				items: 3,
+				loop: true,
+				autoplay: true,
+				autoplayTimeout: 4000,
 				margin: 10,
-				loop: false,
-				autoplay: false,
-				navRewind: true,
-				responsiveClass: true,
+				nav: true,
+				dots: true,
+				navText: ["<i class='fa fa-angle-left'></i>", "<i class='fa fa-angle-right'></i>"],
 				responsive: {
 					0: {
-						items: 1,
+						items: 1
 					},
 					600: {
-						items: 1,
+						items: 2
 					},
-					991: {
-						items: 2,
-					},
-
+					1000: {
+						items: 3
+					}
 				}
 			});
 
@@ -191,13 +190,15 @@ Version: 2.0
 
 				}
 			});
-			$("#owl-team1,#owl-team2,#owl-team3").owlCarousel({
+			//Owl-carousels - Team section carousel disabled for team1
+			$("#owl-team2,#owl-team3").owlCarousel({
 				nav: true,
 				navText: ["<i class='fa fa-chevron-left'></i>", "<i class='fa fa-chevron-right'></i>"],
 				dots: true,
 				margin: 30,
 				loop: true,
-				autoplay: false,
+				autoplay: true,
+				autoplayTimeout: 4000,
 				responsiveClass: true,
 				responsive: {
 					0: {
@@ -206,10 +207,9 @@ Version: 2.0
 					600: {
 						items: 2,
 					},
-					1200: {
+					1000: {
 						items: 4,
-					},
-
+					}
 				}
 			});
 

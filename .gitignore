@@ -14,6 +14,9 @@ venv/
 # Model h5 uninclude
 /model/*.h5
 
+# videos berat
+static/videos/*.mp4
+
 # Log files
 *.log
 
