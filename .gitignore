@@ -12,7 +12,7 @@ venv/
 .ipynb_checkpoints/
 
 # Model h5 uninclude
-/model/*.h5
+model/*.h5
 
 # videos berat
 static/videos/*.mp4
