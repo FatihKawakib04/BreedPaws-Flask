@@ -1002,6 +1002,7 @@ img.mfp-img {
     content: "\e07b";
 }
 
+.social .fab.fa-tiktok:before,
 .social-media .fab.fa-tiktok:before {
     content: "";
     display: inline-block;
